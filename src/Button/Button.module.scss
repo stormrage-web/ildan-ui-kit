@@ -1,0 +1,23 @@
+.theme {
+
+  &_primary {
+    background-color: var(--accent);
+    color: var(--snowy);
+  }
+
+  &_secondary {
+    background-color: var(--snowy);
+    color: var(--accent);
+  }
+}
+
+.size {
+
+  &_md {
+    height: 30px;
+  }
+
+  &_xs {
+    height: 20px;
+  }
+}
