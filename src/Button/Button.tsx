@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import classNames from "../classnames";
+import classNames from "../shared/utils/classnames";
 import styles from "./Button.module.scss";
 
 export enum EButtonSize {
@@ -30,7 +30,9 @@ const Button: FC<ButtonProps> = ({ children, size, theme= EButtonTheme.PRIMARY, 
 		: "";
 
 	return (
-		<button {...props} className={classNames(className, styles.theme, themeClassname, styles.size, sizeClassname)}>
+		<button {...props}
+				// className={classNames(className, styles.theme, themeClassname, styles.size, sizeClassname)}
+		>
 			{children}
 		</button>
 	);
