@@ -1,10 +1,11 @@
+// @ts-ignore
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import Button, {EButtonSize} from "../Button/Button";
 
 export default {
-	title: "Example/Button",
+	title: "Button",
 	component: Button,
 } as ComponentMeta<typeof Button>;
 
@@ -13,7 +14,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const XsBtn = Template.bind({});
 XsBtn.args = {
 	size: EButtonSize.XS,
-	children: "Какой то текст",
+	children: "кнопка",
 };
 
 export const MdBtn = Template.bind({});

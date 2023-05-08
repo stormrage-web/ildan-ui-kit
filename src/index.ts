@@ -1,7 +1,5 @@
-import MyButton from "./MyButton/MyButton";
-import MyInput from "./MyInput/MyInput";
+import Button from "./Button/Button";
 
 export {
-    MyButton,
-    MyInput
+    Button,
 }

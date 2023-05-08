@@ -1,13 +1,13 @@
 const hasOwn = {}.hasOwnProperty;
 
 const classNames = (...classnames: string[]): string => {
-	var classes = [];
+	let classes = [];
 
-	for (var i = 0; i < classNames.length; i++) {
-		var arg = classnames[i];
+	for (let i = 0; i < classNames.length; i++) {
+		let arg = classnames[i];
 		if (!arg) continue;
 
-		var argType = typeof arg;
+		let argType = typeof arg;
 
 		if (argType === "string" || argType === "number") {
 			classes.push(arg);
